@@ -72,9 +72,11 @@ return [
 					'levels'=>'error, warning',
 				],
 				// uncomment the following to show log messages on web pages
+				/*
 				[
 					'class'=>'CWebLogRoute',
 				],
+				*/
 			],
 		],
 	],
