@@ -6,7 +6,10 @@
  * and open the template in the editor.
  */
 
-return array(
+return [
 	'Home'	=>	'Домашняя',
-	'Welcome to'	=>	'Добро пожаловать на сайт'
-);
+	'Welcome to'	=>	'Добро пожаловать на сайт',
+	'About'			=>	'Про нас',
+	'Login'			=>	'Войти',
+	'Logout'		=>	'Выйти'
+];
