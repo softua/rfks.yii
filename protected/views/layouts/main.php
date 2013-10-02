@@ -1,59 +1,311 @@
 <?php /* @var $this Controller */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
-
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
+	<title>title</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="<?= Yii::app()->baseUrl ?>/assets/css/style.css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/css/form.css" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="h-logo">
+				<a href="" class="logo-link"></a>
+				<div class="logo-txt">
+					<div class="logo-abrv">
+						АРКС
+					</div>
+					<h1 class="logo-name">
+						Ассоциация Развития Компьютерного Спорта
+					</h1>
+				</div>
+			</div>
 
-<div class="container" id="page">
+			<div class="sticker">
+				Тут должен быть какой-то слоган
+			</div>
+		</header>
+		
+		<ul class="main-nav">
+			<li>
+				<a href="">
+					Главная
+					<span>Домашняя</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					О нас
+					<span>Организация</span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="">Наша организация</a></li>
+					<li><a href="">Устав</a></li>
+					<li><a href="">Руководящие и контрольно-ревизионные органы</a></li>
+					<li><a href="">Мероприятия</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">
+					Регионы
+					<span>Мы в стране</span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="">Список регионов</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">
+					Галерея
+					<span>Фото и видео</span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="">Фото</a></li>
+					<li><a href="">Видео</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">
+					Контакты
+					<span>Связаться с нами</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					Вступить в АРКС
+					<span>Хочешь быть среди нас?</span>
+				</a>
+			</li>
+		</ul>
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
+		<div class="container">
+			<div class="content">
+				<div class="events">
+					<div class="events__main">
+						<img src="<?= Yii::app()->baseUrl ?>/assets/images/event.jpg" alt="">
+						<h2>Наверное какое-то событие очень важное</h2>
+						<p>Lorem ipsum mea ea error praesent vituperata. Pri mollis qualisque no, veritus persequeris vituperatoribus at pro, no volumus instructior mel. Dico admodum in duo, prompta constituto constituam mea id, per dicunt convenire cu. Nostro inimicus postulant mea no, ullum disputando sea ad. Cu habeo posse summo pro. Mei eu sonet habemus deseruisse, eius inimicus salutandi eum cu.</p>
+					</div>
+					<div class="events__all">
+						<ul class="event__list">
+							<li>
+								<a href="" class="events__all-link">
+									<img src="<?= Yii::app()->baseUrl ?>/assets/images/ev1.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="" class="events__all-link">
+									<img src="<?= Yii::app()->baseUrl ?>/assets/images/ev1.jpg" alt="">
+								</a>
+							</li>
+							<li>
+								<a href="" class="events__all-link">
+									<img src="<?= Yii::app()->baseUrl ?>/assets/images/ev1.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="post">
+					<div class="post-img">
+						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+					</div>
+					<div class="post-text">
+						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
+						<p>Lorem ipsum mea ea error praesent vituperata. Pri mollis qualisque no, veritus persequeris vituperatoribus at pro, no volumus instructior mel. Dico admodum in duo, prompta constituto constituam mea id, per dicunt convenire cu. Nostro inimicus postulant mea no, ullum disputando sea ad. Cu habeo posse summo pro. Mei eu sonet habemus deseruisse, eius inimicus salutandi eum cu.</p>
+						<div class="post-links">
+							<span class="comments">
+								Комментариев: <a href="">100</a>
+							</span>
+							<a href="">Читать далее</a>
+						</div>
+					</div>
+				</div>
 
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		)); ?>
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+				<div class="post">
+					<div class="post-img">
+						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+					</div>
+					<div class="post-text">
+						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
+						<p>Lorem ipsum mea ea error praesent vituperata. Pri mollis qualisque no, veritus persequeris vituperatoribus at pro, no volumus instructior mel. Dico admodum in duo, prompta constituto constituam mea id, per dicunt convenire cu. Nostro inimicus postulant mea no, ullum disputando sea ad. Cu habeo posse summo pro. Mei eu sonet habemus deseruisse, eius inimicus salutandi eum cu.</p>
+						<div class="post-links">
+							<span class="comments">
+								Комментариев: <a href="">100</a>
+							</span>
+							<a href="">Читать далее</a>
+						</div>
+					</div>
+				</div>
 
-	<?php echo $content; ?>
+				<div class="post">
+					<div class="post-img">
+						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+					</div>
+					<div class="post-text">
+						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
+						<p>Lorem ipsum mea ea error praesent vituperata. Pri mollis qualisque no, veritus persequeris vituperatoribus at pro, no volumus instructior mel. Dico admodum in duo, prompta constituto constituam mea id, per dicunt convenire cu. Nostro inimicus postulant mea no, ullum disputando sea ad. Cu habeo posse summo pro. Mei eu sonet habemus deseruisse, eius inimicus salutandi eum cu.</p>
+						<div class="post-links">
+							<span class="comments">
+								Комментариев: <a href="">100</a>
+							</span>
+							<a href="">Читать далее</a>
+						</div>
+					</div>
+				</div>
 
-	<div class="clear"></div>
+				<div class="post">
+					<div class="post-img">
+						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+					</div>
+					<div class="post-text">
+						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
+						<p>Lorem ipsum mea ea error praesent vituperata. Pri mollis qualisque no, veritus persequeris vituperatoribus at pro, no volumus instructior mel. Dico admodum in duo, prompta constituto constituam mea id, per dicunt convenire cu. Nostro inimicus postulant mea no, ullum disputando sea ad. Cu habeo posse summo pro. Mei eu sonet habemus deseruisse, eius inimicus salutandi eum cu.</p>
+						<div class="post-links">
+							<span class="comments">
+								Комментариев: <a href="">100</a>
+							</span>
+							<a href="">Читать далее</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-side">
+				<div class="social">
+					Мы в социальных сетях:
+					<ul class="social-list">
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/vk.gif" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/fb.gif" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/tw.gif" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/gp.gif" alt=""></a>
+						</li>
+					</ul>
+				</div>
 
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+				<div class="right-section">
+					<div class="right__title">
+						Последние новости
+					</div>
+					<div class="latest-news">
+						<a href="">
+							<div class="news-img">
+								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+							</div>
+							<div class="news-txt">
+								<div class="news-txt__title">
+									CS-турнир с ризовым фондом в 15000$
+								</div>
+								<p>Lorem ipsum ne pro nihil saperet int scaevola, eu vix sumo exerci, melsi aeterno feugiat intellegam cu.  Lom ipsum ne pro.</p>
+							</div>
+						</a>
+					</div>
 
-</div><!-- page -->
+					<div class="latest-news">
+						<a href="">
+							<div class="news-img">
+								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+							</div>
+							<div class="news-txt">
+								<div class="news-txt__title">
+									CS-турнир с ризовым фондом в 15000$
+								</div>
+								<p>Lorem ipsum ne pro nihil saperet int scaevola, eu vix sumo exerci, melsi aeterno feugiat intellegam cu.  Lom ipsum ne pro.</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="latest-news">
+						<a href="">
+							<div class="news-img">
+								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+							</div>
+							<div class="news-txt">
+								<div class="news-txt__title">
+									CS-турнир с ризовым фондом в 15000$
+								</div>
+								<p>Lorem ipsum ne pro nihil saperet int scaevola, eu vix sumo exerci, melsi aeterno feugiat intellegam cu.  Lom ipsum ne pro.</p>
+							</div>
+						</a>
+					</div>
+
+					<div class="latest-news">
+						<a href="">
+							<div class="news-img">
+								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+							</div>
+							<div class="news-txt">
+								<div class="news-txt__title">
+									CS-турнир с ризовым фондом в 15000$
+								</div>
+								<p>Lorem ipsum ne pro nihil saperet int scaevola, eu vix sumo exerci, melsi aeterno feugiat intellegam cu.  Lom ipsum ne pro.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="right-section">
+					<div class="right__title">
+						Наши пртнеры
+					</div>
+					<a href="">
+						<img src="<?= Yii::app()->baseUrl ?>/assets/images/partner.jpg" alt="">
+					</a>
+				</div>
+
+				<div class="right-section">
+					<div class="right__title">
+						Последние видео
+					</div>
+					<ul class="video-list">
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="bottom">
+		<footer class="footer">
+			<div class="copyright">
+				<p>&copy; 2013 АРКС. Ассоциация Развития Компьютерного Спорта</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="<?= Yii::app()->baseUrl ?>/assets/js/interface.js"></script>
 
 </body>
 </html>
