@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>title</title>
+	<title><?= $this->pageTitle ?></title>
 	<meta charset="utf-8">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="<?= Yii::app()->baseUrl ?>/assets/css/style.css">
-	<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/css/form.css" />
+	<link rel="stylesheet" href="<?= $this->baseUrl ?>/assets/css/style.css">
+	<link rel="stylesheet" href="<?= $this->baseUrl ?>/assets/css/form.css" />
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -89,7 +89,7 @@
 			<div class="content">
 				<div class="events">
 					<div class="events__main">
-						<img src="<?= Yii::app()->baseUrl ?>/assets/images/event.jpg" alt="">
+						<img src="<?= $this->baseUrl ?>/assets/images/event.jpg" alt="">
 						<h2>Наверное какое-то событие очень важное</h2>
 						<p>Lorem ipsum mea ea error praesent vituperata. Pri mollis qualisque no, veritus persequeris vituperatoribus at pro, no volumus instructior mel. Dico admodum in duo, prompta constituto constituam mea id, per dicunt convenire cu. Nostro inimicus postulant mea no, ullum disputando sea ad. Cu habeo posse summo pro. Mei eu sonet habemus deseruisse, eius inimicus salutandi eum cu.</p>
 					</div>
@@ -97,17 +97,17 @@
 						<ul class="event__list">
 							<li>
 								<a href="" class="events__all-link">
-									<img src="<?= Yii::app()->baseUrl ?>/assets/images/ev1.jpg" alt="">
+									<img src="<?= $this->baseUrl ?>/assets/images/ev1.jpg" alt="">
 								</a>
 							</li>
 							<li>
 								<a href="" class="events__all-link">
-									<img src="<?= Yii::app()->baseUrl ?>/assets/images/ev1.jpg" alt="">
+									<img src="<?= $this->baseUrl ?>/assets/images/ev1.jpg" alt="">
 								</a>
 							</li>
 							<li>
 								<a href="" class="events__all-link">
-									<img src="<?= Yii::app()->baseUrl ?>/assets/images/ev1.jpg" alt="">
+									<img src="<?= $this->baseUrl ?>/assets/images/ev1.jpg" alt="">
 								</a>
 							</li>
 						</ul>
@@ -115,7 +115,7 @@
 				</div>
 				<div class="post">
 					<div class="post-img">
-						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+						<img src="<?= $this->baseUrl ?>/assets/images/img.jpg" alt="">
 					</div>
 					<div class="post-text">
 						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
@@ -131,7 +131,7 @@
 
 				<div class="post">
 					<div class="post-img">
-						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+						<img src="<?= $this->baseUrl ?>/assets/images/img.jpg" alt="">
 					</div>
 					<div class="post-text">
 						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
@@ -147,7 +147,7 @@
 
 				<div class="post">
 					<div class="post-img">
-						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+						<img src="<?= $this->baseUrl ?>/assets/images/img.jpg" alt="">
 					</div>
 					<div class="post-text">
 						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
@@ -163,7 +163,7 @@
 
 				<div class="post">
 					<div class="post-img">
-						<img src="<?= Yii::app()->baseUrl ?>/assets/images/img.jpg" alt="">
+						<img src="<?= $this->baseUrl ?>/assets/images/img.jpg" alt="">
 					</div>
 					<div class="post-text">
 						<h2>Заголовок поста из бложика, может новость а может и видео</h2>
@@ -182,16 +182,16 @@
 					Мы в социальных сетях:
 					<ul class="social-list">
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/vk.gif" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/vk.gif" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/fb.gif" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/fb.gif" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/tw.gif" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/tw.gif" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/gp.gif" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/gp.gif" alt=""></a>
 						</li>
 					</ul>
 				</div>
@@ -203,7 +203,7 @@
 					<div class="latest-news">
 						<a href="">
 							<div class="news-img">
-								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+								<img src="<?= $this->baseUrl ?>/assets/images/n1.jpg" alt="">
 							</div>
 							<div class="news-txt">
 								<div class="news-txt__title">
@@ -217,7 +217,7 @@
 					<div class="latest-news">
 						<a href="">
 							<div class="news-img">
-								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+								<img src="<?= $this->baseUrl ?>/assets/images/n1.jpg" alt="">
 							</div>
 							<div class="news-txt">
 								<div class="news-txt__title">
@@ -231,7 +231,7 @@
 					<div class="latest-news">
 						<a href="">
 							<div class="news-img">
-								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+								<img src="<?= $this->baseUrl ?>/assets/images/n1.jpg" alt="">
 							</div>
 							<div class="news-txt">
 								<div class="news-txt__title">
@@ -245,7 +245,7 @@
 					<div class="latest-news">
 						<a href="">
 							<div class="news-img">
-								<img src="<?= Yii::app()->baseUrl ?>/assets/images/n1.jpg" alt="">
+								<img src="<?= $this->baseUrl ?>/assets/images/n1.jpg" alt="">
 							</div>
 							<div class="news-txt">
 								<div class="news-txt__title">
@@ -262,7 +262,7 @@
 						Наши пртнеры
 					</div>
 					<a href="">
-						<img src="<?= Yii::app()->baseUrl ?>/assets/images/partner.jpg" alt="">
+						<img src="<?= $this->baseUrl ?>/assets/images/partner.jpg" alt="">
 					</a>
 				</div>
 
@@ -272,22 +272,22 @@
 					</div>
 					<ul class="video-list">
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/video.jpg" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/video.jpg" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/video.jpg" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/video.jpg" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/video.jpg" alt=""></a>
 						</li>
 						<li>
-							<a href=""><img src="<?= Yii::app()->baseUrl ?>/assets/images/video.jpg" alt=""></a>
+							<a href=""><img src="<?= $this->baseUrl ?>/assets/images/video.jpg" alt=""></a>
 						</li>
 					</ul>
 				</div>
@@ -305,7 +305,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="<?= Yii::app()->baseUrl ?>/assets/js/interface.js"></script>
+	<script src="<?= $this->baseUrl ?>/assets/js/interface.js"></script>
 
 </body>
 </html>
