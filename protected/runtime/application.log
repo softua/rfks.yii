@@ -38715,3 +38715,43 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/robots.txt
 ---
+2013/10/03 05:42:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "robots.txt".' in D:\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 D:\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\rfks.yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2013/10/03 05:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product.php".' in D:\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('product.php')
+#1 D:\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\rfks.yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product.php
+---
+2013/10/03 06:44:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "robots.txt".' in D:\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 D:\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\rfks.yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
+2013/10/03 06:45:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product.php".' in D:\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('product.php')
+#1 D:\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\rfks.yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product.php?id=4
+---
+2013/10/03 09:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "robots.txt".' in D:\yii-1.1.14\web\CWebApplication.php:286
+Stack trace:
+#0 D:\yii-1.1.14\web\CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 D:\yii-1.1.14\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\OpenServer\domains\rfks.yii\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+---
